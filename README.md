@@ -31,3 +31,26 @@ Launch PyCharm and create a new project by selecting **File > New Project**. Nam
 
 ### b) Create Python Files
 Within the project, create two Python files named `dataCollection.py` and `test.py`. These files will contain the code for collecting hand signal data and testing the trained model, respectively.
+
+---
+
+## 4. Training the Data
+
+### a) Prepare Teachable Machine
+Visit [Teachable Machine](https://teachablemachine.withgoogle.com/) to set up classes for each letter of the sign language alphabet.
+
+### b) Upload Data
+For each class (representing a sign language letter), upload the collected image data corresponding to that letter. Ensure that each class has a sufficient number of images for effective training.
+
+### c) Start Training
+Once all data is uploaded, click on the **"Train Model"** button to start the training process. This process involves training a machine learning model to recognize the hand signals corresponding to each letter.
+
+### d) Export Model
+After training is complete, click on the **"Export Model"** button and select the **TensorFlow-Keras** option to export the trained model. This model will be used for testing and validation.
+
+---
+
+## 5. Testing the Program
+
+### a) Run `test.py`
+Execute the `test.py` file in PyCharm to activate the camera and display real-time hand signal detection.
